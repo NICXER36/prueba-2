@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio • Nicolas Huenchullan – Técnico en Informática</title>
+    <meta name="description" content="Portafolio web de Nicolas Huenchullan, técnico en informática especializado en desarrollo web, PHP y Python.">
+    <link rel="canonical" href="https://teclab.uct.cl/nicolas.huenchullan">
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon.ico">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Menú principal">
+            <ul>
+                <li><a class="active" href="#home">Inicio</a></li>
+                <li><a href="#pruebas">Pruebas</a></li>
+                <li><a href="#talleres">Talleres</a></li>
+                <li><a href="#actividades">Actividades Autónomas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div class="main-content">
+            <!-- Sección de Inicio -->
+            <section id="home" role="region" aria-label="Inicio">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="assets/img/sushi.jpg" alt="Nicolas Huenchullan, técnico en informática, fotografía profesional">
+                    </div>
+                    <div class="container">
+                        <h4><b>Nicolas Huenchullan</b></h4> 
+                        <p class="title">Tecnico en informatica</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Pruebas -->
+            <section id="pruebas" role="region" aria-label="Pruebas">
+                <h2>Pruebas</h2>
+                <div class="content-grid">
+                    <div class="content-item">
+                        <h3>Prueba 1</h3>
+                        <p>Descripción de la prueba 1</p>
+                    </div>
+                    <div class="content-item">
+                        <h3>Prueba 2</h3>
+                        <p>Descripción de la prueba 2</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Talleres -->
+            <section id="talleres" role="region" aria-label="Talleres">
+                <h2>Talleres</h2>
+                <div class="content-grid">
+                    <div class="content-item">
+                        <h3>Taller 1</h3>
+                        <p>Descripción del taller 1</p>
+                    </div>
+                    <div class="content-item">
+                        <h3>Taller 2</h3>
+                        <p>Descripción del taller 2</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Actividades Autónomas -->
+            <section id="actividades" role="region" aria-label="Actividades Autónomas">
+                <h2>Actividades Autónomas</h2>
+                <div class="content-grid">
+                    <div class="content-item">
+                        <h3>Actividad 1</h3>
+                        <p>Descripción de la actividad 1</p>
+                    </div>
+                    <div class="content-item">
+                        <h3>Actividad 2</h3>
+                        <p>Descripción de la actividad 2</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Contacto -->
+            <section id="contact" role="region" aria-label="Formulario de contacto">
+                <h2>Contacto</h2>
+                <p>¿Tienes alguna consulta? ¡Contáctame!</p>
+                <form action="/action_page.php" method="post" aria-label="Formulario de contacto">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">Nombre</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Tu nombre" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Apellido</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Tu apellido" required aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Mensaje</label>
+                        <textarea id="subject" name="subject" placeholder="Escribe tu mensaje aquí..." required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" aria-label="Enviar mensaje">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
